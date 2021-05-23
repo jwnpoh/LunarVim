@@ -58,6 +58,9 @@ return require("packer").startup(
         use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
         use {"windwp/nvim-ts-autotag", opt = true}
 
+        -- go.nvim
+        use "ray-x/go.nvim"
+
         -- Explorer
         use {"kyazdani42/nvim-tree.lua", opt = true}
         -- TODO remove when open on dir is supported by nvimtree
@@ -105,5 +108,6 @@ return require("packer").startup(
         require_plugin("nvim-web-devicons")
         require_plugin("galaxyline.nvim")
         require_plugin("barbar.nvim")
+        require_plugin("go.nvim")
     end
 )
